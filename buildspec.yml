@@ -13,3 +13,7 @@ phases:
 artifacts:
   files:
     - '**/packaged.yml'
+  secondary-artifacts:
+    nemurenai:
+      files:
+        - "**/template.yml"
