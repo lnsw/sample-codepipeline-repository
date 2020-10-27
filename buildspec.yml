@@ -3,7 +3,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - S3_ARTIFACT_BUCKET=	sample-codepipeline-repository-artifact-bucket
+      - S3_ARTIFACT_BUCKET=sample-codepipeline-repository-artifact-bucket
       # - sam build
       # - ls -al
       - sam package --template-file template.yml --s3-bucket $S3_ARTIFACT_BUCKET --output-template-file packaged.yml
