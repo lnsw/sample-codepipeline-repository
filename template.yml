@@ -11,7 +11,7 @@ Resources:
     Properties:
       FunctionName: HelloWorldFunction
       Handler: app.lambda_handler
-      CodeUri: hello_world
+      CodeUri: hello_ls
       Runtime: python3.8
       Events:
         HelloWorld:
@@ -28,15 +28,15 @@ Resources:
   #     CodeUri: ./hello_world2
   #     Runtime: python3.8
 
-  HelloWorldFunction3:
-    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
-    Properties:
-      FunctionName: HelloWorldFunction3
-      Handler: app.lambda_handler
-      CodeUri: hello_world3
-      Runtime: python3.8
-      Events:
-        HelloWorldSNS:
-          Type: SNS
-          Properties:
-            Topic: arn:aws:sns:us-east-1:064319554215:sample-for-normal-lambda-hand
+  # HelloWorldFunction3:
+  #   Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+  #   Properties:
+  #     FunctionName: HelloWorldFunction3
+  #     Handler: app.lambda_handler
+  #     CodeUri: hello_world3
+  #     Runtime: python3.8
+  #     Events:
+  #       HelloWorldSNS:
+  #         Type: SNS
+  #         Properties:
+  #           Topic: arn:aws:sns:us-east-1:064319554215:sample-for-normal-lambda-hand
