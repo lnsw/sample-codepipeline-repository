@@ -6,8 +6,6 @@ phases:
       - sam package --template-file template.yml --s3-bucket $S3_ARTIFACT_BUCKET --output-template-file packaged.yml
 
 artifacts:
-  files:
-    - '**/*'
   secondary-artifacts:
     nemurenai:
       files:
@@ -15,3 +13,6 @@ artifacts:
     oyasumi:
       files:
         - '**/packaged.yml'
+    usimitu:
+      files:
+        - '**/*.yml'
