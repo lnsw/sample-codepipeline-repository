@@ -18,6 +18,6 @@ artifacts:
     nemurenai:
       files:
         - "**/template.yml"
-    name: oyasumi
-    files:
-      - '**/packaged.yml'
+    oyasumi:
+      files:
+        - '**/packaged.yml'
