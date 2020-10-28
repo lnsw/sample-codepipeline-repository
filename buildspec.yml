@@ -11,6 +11,7 @@ phases:
       - cat packaged.yml
 
 artifacts:
+  name: oyasumi
   files:
     - '**/packaged.yml'
   secondary-artifacts:
