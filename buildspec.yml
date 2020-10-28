@@ -11,10 +11,13 @@ phases:
       - cat packaged.yml
 
 artifacts:
-  name: oyasumi
-  files:
-    - '**/packaged.yml'
+  # name: oyasumi
+  # files:
+  #   - '**/packaged.yml'
   secondary-artifacts:
     nemurenai:
       files:
         - "**/template.yml"
+    name: oyasumi
+    files:
+      - '**/packaged.yml'
