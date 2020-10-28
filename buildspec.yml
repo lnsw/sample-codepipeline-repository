@@ -13,7 +13,6 @@ phases:
 artifacts:
   files:
     - '**/packaged.yml'
-  name: oyasumi
   secondary-artifacts:
     nemurenai:
       files:
